@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 export default function Header() {
   return (
     <div className="w-full flex items-center justify-center">
@@ -9,13 +7,17 @@ export default function Header() {
           <span className="font-bold">Shortinho</span>
         </div>
         <ul className="flex w-full justify-end">
-          <li className="py-2 px-4 rounded-lg hover:bg-neutral-50 hover:cursor-pointer">
+          <li className="py-2 px-4 rounded-lg hover:bg-neutral-100 hover:cursor-pointer">
             <a className="text-base" href="/">
-              Home
+              Início
+            </a>
+          </li>
+          <li className="py-2 px-4 rounded-lg hover:bg-neutral-100 hover:cursor-pointer">
+            <a className="text-base" href="/sobre">
+              Sobre
             </a>
           </li>
         </ul>
-        <Button variant="outline">Entrar</Button>
       </nav>
     </div>
   );
